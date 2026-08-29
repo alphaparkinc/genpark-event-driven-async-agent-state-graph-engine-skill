@@ -1,0 +1,38 @@
+{
+  "name": "genpark-event-driven-async-agent-state-graph-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Event-driven asynchronous agent state graph engine managing cyclic transitions and persistent step checkpoints.",
+  "author": "genpark",
+  "category": "agent-workflow",
+  "tags": [
+    "llama-index-workflows",
+    "event-driven-agent",
+    "state-graph",
+    "async-workflow",
+    "checkpoint-engine"
+  ],
+  "inputs": {
+    "workflow_name": {
+      "type": "string"
+    },
+    "initial_event_payload": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "workflow_execution_id": {
+      "type": "string"
+    },
+    "events_emitted_count": {
+      "type": "integer"
+    },
+    "workflow_success": {
+      "type": "boolean"
+    },
+    "state_snapshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
